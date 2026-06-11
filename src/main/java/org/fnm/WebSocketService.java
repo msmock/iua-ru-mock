@@ -5,7 +5,7 @@ import io.quarkus.websockets.next.PathParam;
 import io.quarkus.websockets.next.WebSocket;
 import org.jboss.logging.Logger;
 
-@WebSocket(path = "/services-registration/:instanceId/:replicaId")
+@WebSocket(path = "/service-registration/:instanceId/:replicaId")
 public class WebSocketService {
 
     private static final Logger LOG = Logger.getLogger(WebSocketService.class);
