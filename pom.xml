@@ -53,6 +53,20 @@
             <artifactId>rest-assured</artifactId>
             <scope>test</scope>
         </dependency>
+        <!-- run periodic jobs -->
+        <dependency>
+            <groupId>io.quarkus</groupId>
+            <artifactId>quarkus-scheduler</artifactId>
+        </dependency>
+
+        <!-- Source: https://mvnrepository.com/artifact/io.quarkus/quarkus-rest-jsonb -->
+        <dependency>
+            <groupId>io.quarkus</groupId>
+            <artifactId>quarkus-rest-jsonb</artifactId>
+            <version>3.37.2</version>
+            <scope>compile</scope>
+        </dependency>
+
     </dependencies>
 
     <build>

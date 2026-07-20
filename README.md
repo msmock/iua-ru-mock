@@ -53,3 +53,19 @@ Or, if you don't have GraalVM installed, you can run the native executable build
 You can then execute your native executable with: `./target/quarkus-test-1.0.0-SNAPSHOT-runner`
 
 If you want to learn more about building native executables, please consult <https://quarkus.io/guides/maven-tooling>.
+
+## Other Maven Commands 
+
+mvn wrapper:wrapper  -> configure the maven wrapper
+
+./mvnw package -> generate Jar files
+
+./mvnw package -Pnative  -Dmaven.test.skip  -> a runner with all dependencies and the classical
+
+java -jar target/quarkus-project-1.0-SNAPSHOT-runner.jar -> run the executeable
+
+./mvnw package -Pnative -> build native image
+
+./mvnw verify -Pnative  -> validate native package
+
+./mvnw package -Pnative -Dnative-image.docker-build=true -> build native docker image
