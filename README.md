@@ -20,13 +20,16 @@ You can run your application in dev mode that enables live coding using:
 You can run the native executable build in a container using:
 
 ```shell script
-./mvnw package -Dnative -Dquarkus.native.container-build=true
+./mvnw clean package -Dnative -Dquarkus.native.container-build=true -Dmaven.javadoc.skip=true
 ```
-
-You can then execute your native executable with: `./target/quarkus-test-1.0.0-SNAPSHOT-runner`
 
 ## Create docker image 
 
-```shell script
+```
 docker build -t iua-ru-mock .
+```
+
+run docker container:
+```
+docker run -d --name iua-ru-mock -p 9090:9090 --network my_network iua-ru-mock   
 ```

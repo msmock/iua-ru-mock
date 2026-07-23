@@ -13,7 +13,7 @@ public class WebSocketService {
     @OnTextMessage
     public String onMessage(String message, @PathParam("instanceId") String instanceId, @PathParam("replicaId") String replicaId) {
         LOG.info("Received message from " + instanceId + ":" + replicaId + ": " + message);
-        return "Hello: " + message;
+        return "Message received: " + message;
     }
 
 }
