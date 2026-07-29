@@ -26,7 +26,7 @@ Compile:
 
 build image:
 ```
-docker build -t ima-ru-mock .
+docker build -t iua-ru-mock .
 ```
 
 run container:
